@@ -1,12 +1,17 @@
 import './App.css';
 import { CardACollection } from './ui-components'
+import { Authenticator } from '@aws-amplify/ui-react';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <CardACollection />
-    </div>
+    <Authenticator>
+      {({ signOut, user }) => (
+        <main>
+          <h1>Hello {user.username}</h1>
+          <CardACollection/>
+          <button onClick={signOut}>Sign out</button>
+        </main>
+      )}
+    </Authenticator>
   );
 }
-
-export default App;

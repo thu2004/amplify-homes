@@ -10,6 +10,11 @@
       "StackName": "amplify-amplifyhomes-devv-80916",
       "StackId": "arn:aws:cloudformation:eu-west-1:012173391380:stack/amplify-amplifyhomes-devv-80916/a4755aa0-55a2-11ec-bbba-02d45066abb3",
       "AmplifyAppId": "d3bvg3gfpjjia3"
+    },
+    "categories": {
+      "auth": {
+        "amplifyhomes": {}
+      }
     }
   },
   "staging": {
